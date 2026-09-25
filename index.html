@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fruits</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <canvas id="game"></canvas>
+
+        <!-- Quest Coins -->
+        <div id="questCoinDisplay">
+            🪙 <span id="questCoins">0</span>
+        </div>
+
+
+        <!-- Main Menu -->
+        <div id="mainMenu" class="overlay">
+
+            <div class="menuBox">
+
+                <h1 id="overlayTitle">Fruits</h1>
+
+
+                <!-- Menu Stats -->
+                <div id="menuStats">
+
+                    <p>
+                        🍎 Total Apples Collected:
+                        <span id="totalApples">0</span>
+                    </p>
+
+                    <p>
+                        🏆 Trophies:
+                        <span id="trophies">0</span>
+                    </p>
+
+                    <p>
+                        💀 Total Players Killed:
+                        <span id="totalKills">0</span>
+                    </p>
+
+                        🥇 Rank:
+                        <span id="rank">Copper 1</span>
+                    </p>
+
+                    <p>
+                        🎮 Wins:
+                        <span id="wins">0</span>
+                    </p>
+
+
+                    <!-- Rank Progress -->
+                    <div id="rankProgress">
+
+                        <p id="rankProgressText">
+                            Copper 1
+                        </p>
+
+                        <div id="rankProgressBar">
+
+                            <div id="rankProgressFill"></div>
+
+                        </div>
+
+                        <p id="rankProgressWins">
+                            0 / 10 wins
+                        </p>
+
+                        <p id="rankProgressNext">
+                            10 wins until Bronze 1
+                        </p>
+
+                    </div>
+
+
+                    <!-- Quests Button -->
+                    <button id="questsButton">
+                        Quests
+                    </button>
+
+                </div>
+
+
+                <div id="gameStats">
+
+                    <p>
+                        🍎 Apples This Game:
+                        <span id="gameApples">0</span>
+                    </p>
+
+                    <p>
+                        🏆 Trophies:
+                        <span id="gameTrophies">0</span>
+                    </p>
+
+                     <p>
+                        💀 Players Killed:
+                        <span id="gameKills">0</span>
+                    </p>
+
+                </div>
+
+
+                <button id="playButton">
+                    Play
+                </button>
+
+                <button id="menuButton">
+                    Main Menu
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quest Menu -->
+        <div id="questMenu" class="overlay">
+
+            <div class="menuBox">
+
+                <h1>
+                    Quests
+                </h1>
+
+                <div id="questList"></div>
+
+                <button id="backFromQuestsButton">
+                    Back to Main Menu
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
